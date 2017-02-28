@@ -22,6 +22,8 @@ h2 {margin: 10px 0 5px;}
 .plot{
 	min-height:300px;
 	position:relative;
+	background:rgb(220,220,220);
+	margin:10px 0px;
 }
 .control{
 	height:100px;
