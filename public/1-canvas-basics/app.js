@@ -15,7 +15,7 @@ var ctx = canvas.getContext('2d') ;
 //Part 2: Draw a gray background, with fillStyle = 'rgb(250,250,250)'
 
 ctx.fillStyle = 'rgb(250,250,250)';
-ctx.fillRect = (0,0,w,h);		
+ctx.fillRect(0,0,w,h);		
 
 //Part 3: Draw a x and y grid, spaced 50px apart, with strokeStyle = 'rgb(180,180,180)'
 //Hint: use context2D.beginPath and context2D path commands within two for... loops
@@ -41,11 +41,11 @@ for( var i=0; i<w; i+=50){
 //Part 4: Draw a filled red rectangle at (50,50), with width = 50 and height = 50
 //Draw a rectangle with red border at (150,50), with width = 50 and height = 50
 //Hint: use context2D.fillRect and context2D.strokeRect
-ctx.fillStyle = 'rgb(255,0,0)'
+ctx.fillStyle = 'rgb(255,0,0)';
 ctx.fillRect(50,50,50,50);
 
-ctx.fillStyle = 'rgb(255,0,0)';
-ctx.fillRect(150,50,50,50);
+ctx.strokeStyle = 'rgb(255,0,0)';
+ctx.strokeRect(150,50,50,50);
 
 // Part 5: Draw a series of circles and lines using the context2D path commands, as shown
 ctx.beginPath();
